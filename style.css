@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+/* -------------------- */
+/*-------- Navbar --------*/
+/* -------------------- */
+nav.custom-nav {
+  background-color: white;
+  box-shadow: 1px 1px 10px rgb(152, 152, 152);
+}
+nav .logo {
+  font-family: "Italiana", serif;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4rem;
+  text-decoration: none;
+}
+
+/* -------------------- */
+/*-------- Main --------*/
+/* -------------------- */
+main .card-section {
+  width: 90%;
+  margin: auto;
+  margin-top: 5em;
+}
+main .heading {
+  font-family: sans-serif;
+  margin-bottom: 3rem;
+}
+main .custom-card {
+  height: 60vh;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+/* Image */
+main .custom-card .first-img {
+  background: url(/images/first.jpg);
+  border-radius: 1rem 0 0 1rem;
+}
+main .custom-card .second-img {
+  background: url(/images/second.jpg);
+}
+main .custom-card .third-img {
+  background: url(/images/third.jpg);
+  border-radius: 0 1rem 1rem 0;
+}
+main .custom-card .custom-img {
+  width: 33%;
+  height: 100%;
+  background-size: cover;
+  color: rgb(249, 239, 239);
+  padding: 1rem;
+  font-size: 1.3rem;
+  filter: brightness(0.9);
+  transition-duration: 1000ms;
+}
+main .custom-card .fa-solid {
+  opacity: 0;
+  float: right;
+  font-size: 1.5rem;
+  right: -6rem;
+  margin-right: auto;
+}
+main .custom-card .span {
+  float: left;
+}
+main .custom-card .first-img:hover,
+main .custom-card .second-img:hover,
+main .custom-card .third-img:hover {
+  width: 70%;
+}
+main .custom-card .first-img:hover .fa-solid,
+main .custom-card .second-img:hover .fa-solid,
+main .custom-card .third-img:hover .fa-solid {
+  opacity: 1;
+  transition-duration: 500ms;
+}
+
+@media only screen and (max-width: 600px) {
+    main .card-section {
+        margin-top: 3em;
+      }
+      main .heading {
+        font-family: sans-serif;
+        margin-bottom: 1rem;
+      }
+  main .custom-card {
+    height: 30vh;
+  }
+  main .custom-card .custom-img {
+    font-size: 0.7rem;
+  }
+  main .custom-card .fa-solid {
+    font-size: 0.7rem;
+  }
+  main .custom-card .custom-img {
+    width: 53%;
+  }
+  main .custom-card .first-img:hover,
+main .custom-card .second-img:hover,
+main .custom-card .third-img:hover {
+  width: 100%;
+}
+}
