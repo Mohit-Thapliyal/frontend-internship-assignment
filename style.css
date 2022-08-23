@@ -37,14 +37,14 @@ main .custom-card {
 }
 /* Image */
 main .custom-card .first-img {
-  background: url("/images/first.jpg");
+  background: url("images/first.jpg");
   border-radius: 1rem 0 0 1rem;
 }
 main .custom-card .second-img {
-  background: url("/images/second.jpg");
+  background: url("images/second.jpg");
 }
 main .custom-card .third-img {
-  background: url("/images/third.jpg");
+  background: url("images/third.jpg");
   border-radius: 0 1rem 1rem 0;
 }
 main .custom-card .custom-img {
@@ -104,4 +104,13 @@ main .custom-card .second-img:hover,
 main .custom-card .third-img:hover {
   width: 100%;
 }
+}
+
+.test{
+  height: 12rem;
+  width: 12rem;
+  background-color: aquamarine;
+  margin-left: 5rem;
+  margin-bottom: 8rem;
+  background-image: url(images/first.jpg);
 }
